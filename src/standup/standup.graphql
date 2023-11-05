@@ -1,0 +1,26 @@
+type Standup {
+  id: String!
+  standupId: String!
+  userId: String!
+  text: String!
+  ts: Float!
+}
+
+type StandupUserList {
+  standupId: String!
+  userId: String!
+  text: String!
+  ts: Float!
+  username: String!
+  role: String
+  image: String
+}
+
+type Query {
+  getStandupsFromDate(startTs: Float, endTs: Float): [StandupUserList]
+  getStandupEditHistory(standupId: String!): [Standup]
+}
+
+type Subscription {
+  messageAdded: Standup
+}

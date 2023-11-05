@@ -1,0 +1,15 @@
+type User {
+  userId: String!
+  username: String!
+  role: String!
+  image: String
+}
+
+type Query {
+  # getSlackUser(id: String): User!
+  getAllUsers: [User!]!
+}
+
+type Mutation {
+  updateUserRole(id: String, role: String): User!
+}
