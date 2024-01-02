@@ -13,7 +13,7 @@
     "start:dev": "nest start --watch",
     "dev": "concurrently \"pnpm:start:dev\" \"pnpm:gen-typings\"",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main",
+    "start:prod": "node dist/src/main",
     "gen-typings": "ts-node ./src/generate-typings",
     "migration:generate": "typeorm-ts-node-commonjs migration:generate -d ./orm.config.ts",
     "migration:run": "typeorm-ts-node-commonjs migration:run -d ./orm.config.ts",
