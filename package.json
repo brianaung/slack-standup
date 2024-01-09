@@ -1,5 +1,5 @@
 {
-  "packageManager": "pnpm@8.10.2",
+  "packageManager": "npm@10.2.3",
   "name": "standup-board-server-brian",
   "version": "0.0.1",
   "description": "",
@@ -11,7 +11,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
-    "dev": "concurrently \"pnpm:start:dev\" \"pnpm:gen-typings\"",
+    "dev": "concurrently \"npm:start:dev\" \"npm:gen-typings\"",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/src/main",
     "gen-typings": "ts-node ./src/generate-typings",
