@@ -1,0 +1,6 @@
+query GetStandupEditHistory($standupId: String!) {
+  getStandupEditHistory(standupId: $standupId) {
+    text
+    ts
+  }
+}

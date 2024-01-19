@@ -1,0 +1,8 @@
+query GetAllUsers {
+  getAllUsers {
+    userId
+    username
+    role
+    image
+  }
+}

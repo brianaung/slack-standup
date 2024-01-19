@@ -1,5 +1,5 @@
 {
-  description = "standup-board-server build environment";
+  description = "Standup-board build environment";
   inputs = { 
 		nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 	};
@@ -10,8 +10,9 @@
     in {
       devShells.x86_64-linux.default = pkgs.mkShell {
         name = "Standup-board build environment";
-        buildInputs = [
-          pkgs.nodejs_18
+        buildInputs = with pkgs; [
+          nodejs_18
+					prettierd
         ];
         shellHook = ''
           echo "Welcome in $name"

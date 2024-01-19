@@ -1,0 +1,11 @@
+query GetStandupsFromDate($startTs: Float, $endTs: Float) {
+  getStandupsFromDate(startTs: $startTs, endTs: $endTs) {
+    standupId
+    userId
+    text
+    ts
+    username
+    role
+    image
+  }
+}

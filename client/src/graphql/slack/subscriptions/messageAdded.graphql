@@ -1,0 +1,9 @@
+subscription MessageAdded {
+  messageAdded {
+    id
+    standupId
+    userId
+    text
+    ts
+  }
+}
