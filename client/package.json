@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 3000",
+    "dev": "vite --port 3000 --host",
     "build": "tsc && vite build",
     "generate:foo": "graphql-codegen --config ./codegen/fooCodegen.yml",
     "generate:slack": "graphql-codegen --config ./codegen/slackCodegen.yml",
