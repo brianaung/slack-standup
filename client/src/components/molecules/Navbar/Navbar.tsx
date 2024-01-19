@@ -18,6 +18,7 @@ const Navbar = () => {
       <div className={classes.navlink} onClick={open}>
         Manage Users
       </div>
+      {/*
       <Button
         onClick={() =>
           logout({ logoutParams: { returnTo: window.location.origin } })
@@ -25,6 +26,7 @@ const Navbar = () => {
       >
         Logout
       </Button>
+			*/}
       <Modal
         opened={opened}
         fullScreen
