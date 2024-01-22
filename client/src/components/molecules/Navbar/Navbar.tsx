@@ -1,13 +1,13 @@
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
 import { useStyles } from "./styles";
-import { Text, Button, Modal } from "@mantine/core";
+import { Text, Modal } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { AnimatedTeaCup, DndBoard } from "../..";
 import useUserStore from "../../../stores/userStore";
 
 const Navbar = () => {
   const { classes } = useStyles();
-  const { logout } = useAuth0();
+  // const { logout } = useAuth0();
   const [opened, { open, close }] = useDisclosure(false);
   const { setRefetchFlag } = useUserStore();
 
