@@ -1,5 +1,6 @@
 services:
   client:
+    image: slack-standup-client
     build: client/
     ports:
       - 127.0.0.1:3000:3000
@@ -7,6 +8,7 @@ services:
       - path: ./client/.env
 
   server:
+    image: slack-standup-server
     build: server/
     ports:
       - 127.0.0.1:4000:4000
@@ -18,7 +20,7 @@ services:
   db:
     image: postgres:15.5
     volumes:
-      - sb-pg-data:/var/lib/postgres
+      - sb-pg-data:/var/lib/postgres/data
     env_file:
       - path: ./server/.env
 
