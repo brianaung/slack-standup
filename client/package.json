@@ -4,6 +4,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "electron/main.js",
+  "description": "Slack Standup Board App",
   "scripts": {
     "dev": "vite --port 3000 --host",
     "build": "tsc && vite build",
@@ -11,7 +13,8 @@
     "generate:slack": "graphql-codegen --config ./codegen/slackCodegen.yml",
     "generate:user": "graphql-codegen --config ./codegen/userCodegen.yml",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "electron:start": "electron ."
   },
   "dependencies": {
     "@apollo/client": "^3.8.2",
