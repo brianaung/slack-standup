@@ -1,18 +1,28 @@
 # Slack Standup
 
+A webapp integrated with Slack to streamline the daily standup process.
+
+> Stack: React (Vite), Graphql, Nest.js, Postgres (TypeORM)
+
 ## Features
+- View daily messages real-time.
+- Keep track of edited message history.
+- Filter messages across teams.
+- Assign members to different groups using drag-and-drop ui.
+
 wip
 
-## Examples
+## Screenshots
 wip
 
-## Prerequisites
+## Running the app
+
+### Prerequisites
 - Install [Docker](https://docs.docker.com/).
 - [Join](https://join.slack.com/t/myworkspace-s9d5002/shared_invite/zt-2bvwt0h6u-LWh7pBvzj35TpCrIll2GSw) the Slack channel.
 
-## Running the app
+### Steps
 You can pull the docker images from this [repository](https://hub.docker.com/r/brianaung16/slack-standup).
-
 1. Pull all images.
 ```
 docker pull --all-tags brianaung16/slack-standup
