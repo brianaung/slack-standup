@@ -1,6 +1,6 @@
 services:
   client:
-    image: slack-standup-client
+    image: brianaung16/slack-standup:client
     build: client/
     ports:
       - 127.0.0.1:3000:3000
@@ -8,7 +8,7 @@ services:
       - path: ./client/.env
 
   server:
-    image: slack-standup-server
+    image: brianaung16/slack-standup:server
     build: server/
     ports:
       - 127.0.0.1:4000:4000
