@@ -13,6 +13,9 @@
 		buildInputs = with pkgs; [
 			nodejs_18
 			electron_28
+			nil
+			nodePackages.typescript-language-server
+			tailwindcss-language-server
 			prettierd
 		];
 		shellHook = ''
